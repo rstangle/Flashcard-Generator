@@ -21,7 +21,7 @@ inquirer
     // If the inquirerResponse confirms, we displays the inquirerResponses.
     if (inquirerResponse.confirm) {
       BasicCard();
-      // console.log(BasicCard());
+      // console.log(BasicCard);
     }
     else {
       console.log("\nThat's okay come back when you've studied.\n");
