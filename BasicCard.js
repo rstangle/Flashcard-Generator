@@ -19,28 +19,28 @@ var BasicCard = function(front, back) {
 // 	console.log(this.front);
 // };
 
-var count = 0;
+// var count = 0;
 
-var askQuestion = function() {
-		if (count < basic.length) {
-			inquirer.prompt([
-      			{
-    	  		  name: "question",
-      	  		  message: "Question: " + basic[count].front
-    			}, {
-      	  		  name: "answer",
-      	  		  message: basic[count].back
-      			}
-  			]).then(function(answers) {
-    			// var newQuestion = new BasicCard(answers.question, answers.answer);
-    			count++;
-    			askQuestion();
-    		});
-    	}
-		else {
-			console.log("All questions asked");
-		}
-};
+// var askQuestion = function() {
+// 		if (count < basic.length) {
+// 			inquirer.prompt([
+//       			{
+//     	  		  name: "question",
+//       	  		  message: "Question: " + basic[count].front
+//     			}, {
+//       	  		  name: "answer",
+//       	  		  message: basic[count].back
+//       			}
+//   			]).then(function(answers) {
+//     			// var newQuestion = new BasicCard(answers.question, answers.answer);
+//     			count++;
+//     			askQuestion();
+//     		});
+//     	}
+// 		else {
+// 			console.log("All questions asked");
+// 		}
+// };
 
 
 // askQuestion();
@@ -56,4 +56,4 @@ var askQuestion = function() {
 
 // Exporting the BasicCard constructor which we will use in main.js
 module.exports = BasicCard;
-module.exports = askQuestion;
+// module.exports = askQuestion;
