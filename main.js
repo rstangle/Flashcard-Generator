@@ -20,7 +20,8 @@ for (var i = 0; i < basic.length; i++) {
   // console.log("Basic Array contents: " + basicArr[1].front);
 
 }
-  console.log(basicArr[1].front);
+ // Keep getting undefined as the contents of basicArr and I don't know why. Very confused and a bit disappointed.
+  console.log("basicArr Contents: " + basicArr.front);
 
 inquirer
   .prompt([
